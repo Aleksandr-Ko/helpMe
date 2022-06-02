@@ -4,8 +4,8 @@ import java.util.function.Predicate;
 
 public class Functional {
     public static void main(String[] args) {
-
-
+        
+        
 
         Predicate<String> predicate = (s) -> s.length() > 0;
 /*
