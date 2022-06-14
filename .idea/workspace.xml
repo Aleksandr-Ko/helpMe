@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="640f597d-3ad3-4c06-bd2c-70e96b106266" name="Changes" comment="перемещение">
+      <change afterPath="$PROJECT_DIR$/src/main/java/exeption/mastering/Factorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exeption/mastering/FactorialException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exeption/mastering/NewMes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/dateAndTime/StringDateFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/regex/matcher/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/regex/matcher/MyTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/regex/matcher/MyTest3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Aquarium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Aquarium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TutorialDebag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TutorialDebag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/dateAndTime/DataCalendarTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/dateAndTime/DataCalendarTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/regex/PrintFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/regex/PrintFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/regex/matcher/MatcherReplaceExample_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/regex/matcher/MatcherReplaceExample_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/stream/user/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/stream/user/Sample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Aquarium.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Aquarium.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Fish.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Fish.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TutorialDebag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TutorialDebag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/dateAndTime/DataCalendarTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/dateAndTime/DataCalendarTime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/function/lamda/LambdaScopeTest$InnerClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/function/lamda/LambdaScopeTest$InnerClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/function/lamda/LambdaScopeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/function/lamda/LambdaScopeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/function/lamda/StreamMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/function/lamda/StreamMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/regex/PrintFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/regex/PrintFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/regex/matcher/MatcherReplaceExample_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/regex/matcher/MatcherReplaceExample_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/stream/user/Sample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/stream/user/Sample.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="26gwl3pxMnpQ332Ew4htsZEWmgP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/kopylov/Desktop/Project/work/helpMe/src/main/java/com/baeldung/poi/excel&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kopylov/Desktop/Project/work/H_E_L_P/helpMe&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f270eadf8f50f0d999c0b4017abeb06a&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="petBase.dto" />
+      <recent name="petBase" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="petBase.dto" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="petBase.dto" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="petBase.Service" />
+      <recent name="petBase.dto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MyTest3">
+    <configuration name="MatcherReplaceExample_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.regex.matcher.MatcherReplaceExample_2" />
+      <module name="helpMe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.regex.matcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.regex.matcher.MyTest" />
+      <module name="helpMe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.regex.matcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.regex.matcher.MyTest2" />
+      <module name="helpMe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.regex.matcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.regex.matcher.MyTest3" />
+      <module name="helpMe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.regex.matcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatternMatchesExample_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.regex.pattern.PatternMatchesExample_1" />
+      <module name="helpMe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.regex.pattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyTest3" />
+        <item itemvalue="Application.MyTest" />
+        <item itemvalue="Application.MatcherReplaceExample_2" />
+        <item itemvalue="Application.MyTest2" />
+        <item itemvalue="Application.PatternMatchesExample_1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\kopylov\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="640f597d-3ad3-4c06-bd2c-70e96b106266" name="Changes" comment="" />
+      <created>1647858691340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647858691340</updated>
+      <workItem from="1647858693027" duration="10073000" />
+      <workItem from="1647926123060" duration="16647000" />
+      <workItem from="1648005519999" duration="25590000" />
+      <workItem from="1648092300149" duration="56887000" />
+      <workItem from="1648437570388" duration="613000" />
+      <workItem from="1648440643818" duration="24956000" />
+      <workItem from="1648523885877" duration="17300000" />
+      <workItem from="1648546753043" duration="22638000" />
+      <workItem from="1648622139105" duration="1878000" />
+      <workItem from="1648624265063" duration="30192000" />
+      <workItem from="1648783460356" duration="19859000" />
+      <workItem from="1649042853462" duration="12619000" />
+      <workItem from="1649055670797" duration="26619000" />
+      <workItem from="1649141163866" duration="9563000" />
+      <workItem from="1649154185511" duration="7364000" />
+      <workItem from="1649215222350" duration="1185000" />
+      <workItem from="1649216463840" duration="7093000" />
+      <workItem from="1649229489327" duration="23098000" />
+      <workItem from="1649327187519" duration="4765000" />
+      <workItem from="1649417953077" duration="1004000" />
+      <workItem from="1649670104050" duration="79000" />
+      <workItem from="1649670624721" duration="403000" />
+      <workItem from="1649746349844" duration="474000" />
+      <workItem from="1649759592072" duration="799000" />
+      <workItem from="1649997571597" duration="892000" />
+      <workItem from="1650262452272" duration="15113000" />
+      <workItem from="1650338237464" duration="43330000" />
+      <workItem from="1650449118004" duration="57000" />
+      <workItem from="1650515948323" duration="17471000" />
+      <workItem from="1650618784533" duration="11611000" />
+      <workItem from="1650943334724" duration="742000" />
+      <workItem from="1650944463980" duration="723000" />
+      <workItem from="1651129739269" duration="794000" />
+      <workItem from="1651136807396" duration="765000" />
+      <workItem from="1651143073659" duration="3857000" />
+      <workItem from="1651222791882" duration="2904000" />
+      <workItem from="1652414516065" duration="2884000" />
+      <workItem from="1652419155307" duration="4798000" />
+      <workItem from="1652677891077" duration="3205000" />
+      <workItem from="1652698116364" duration="624000" />
+      <workItem from="1652769442761" duration="18000" />
+      <workItem from="1652851385478" duration="10609000" />
+      <workItem from="1653019085780" duration="456000" />
+      <workItem from="1653022355462" duration="724000" />
+      <workItem from="1653294746679" duration="789000" />
+      <workItem from="1653369851487" duration="933000" />
+      <workItem from="1653389618425" duration="710000" />
+      <workItem from="1653391654843" duration="404000" />
+      <workItem from="1653482167851" duration="3436000" />
+      <workItem from="1653635785542" duration="1541000" />
+      <workItem from="1653646392055" duration="141000" />
+      <workItem from="1654154270614" duration="4462000" />
+      <workItem from="1654166900602" duration="2098000" />
+      <workItem from="1654228374937" duration="5882000" />
+      <workItem from="1654238016407" duration="2661000" />
+      <workItem from="1654254147262" duration="970000" />
+      <workItem from="1654517846508" duration="10000" />
+      <workItem from="1654582320283" duration="115000" />
+      <workItem from="1654582454947" duration="395000" />
+      <workItem from="1654583119340" duration="6923000" />
+      <workItem from="1654673030050" duration="6538000" />
+      <workItem from="1654687071170" duration="594000" />
+      <workItem from="1654746753252" duration="594000" />
+      <workItem from="1654770836094" duration="890000" />
+      <workItem from="1654771872883" duration="1012000" />
+      <workItem from="1655179096024" duration="6475000" />
+      <workItem from="1655189775961" duration="755000" />
+      <workItem from="1655198056117" duration="5000" />
+      <workItem from="1655198277147" duration="4509000" />
+    </task>
+    <task id="LOCAL-00001" summary="создание helpMe">
+      <created>1654161277243</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654161277243</updated>
+    </task>
+    <task id="LOCAL-00002" summary="создание helpMe">
+      <created>1654161656937</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654161656937</updated>
+    </task>
+    <task id="LOCAL-00003" summary="перемещение">
+      <created>1654771721722</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654771721722</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../pet-service" />
+    </ignored-roots>
+    <MESSAGE value="создание helpMe" />
+    <MESSAGE value="перемещение" />
+    <option name="LAST_COMMIT_MESSAGE" value="перемещение" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/poi/word/UpdateDocument.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/poi/gitHub/CreateDocument.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/petBase/service/table/MergingXWPFDocument.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/money/regex/matcher/MatcherFindStartEndExample.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/money/regex/pattern/PatternCompileExample.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/money/regex/matcher/CreateMatcherExample_1.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/poi/word/resource/WayResourcePath.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/scanner/readConsole/ReadConsol.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/generic/first/Garage.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/function/lamda/One.java</url>
+          <line>38</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/function/lamda/Light.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Aquarium.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TutorialDebag.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/regex/matcher/MyTest2.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/regex/matcher/MyTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.poi.xwpf.usermodel.XWPFTableCell" memberName="bodyElements" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/poi$FishTable1.ic" NAME="FishTable1 Coverage Results" MODIFIED="1648034593972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>poi.table.*</FILTER>
+    </SUITE>
+  </component>
+</project>

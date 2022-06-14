@@ -1,0 +1,213 @@
+Index: src/main/java/util/regex/matcher/MyTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/util/regex/matcher/MyTest.java b/src/main/java/util/regex/matcher/MyTest.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/util/regex/matcher/MyTest.java	
+@@ -0,0 +1,30 @@
++package util.regex.matcher;
++
++import java.util.regex.Matcher;
++import java.util.regex.Pattern;
++
++public class MyTest {
++    public static void main(String[] args) {
++
++        String result = "";
++
++        String text = "197229, г. Санкт-Петербург, Лахтинский пр-кт, д. 2 к. 3 стр. 1";
++
++        String patternString1 = "((г.)(.+?)) ";
++        String patternString2 = "((город )(.+?)) ";
++
++        Pattern pattern      = Pattern.compile(patternString1);
++        Matcher matcher      = pattern.matcher(text);
++
++        StringBuffer stringBuffer = new StringBuffer();
++
++        while(matcher.find()){
++            result = matcher.group();
++        }
++
++        System.out.println(result);
++
++    }
++
++
++}
+Index: src/main/java/util/dateAndTime/StringDateFormat.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/util/dateAndTime/StringDateFormat.java b/src/main/java/util/dateAndTime/StringDateFormat.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/util/dateAndTime/StringDateFormat.java	
+@@ -0,0 +1,15 @@
++package util.dateAndTime;
++
++import java.util.Calendar;
++
++public class StringDateFormat {
++
++    public static void main(String[] args) {
++
++        Calendar c = Calendar.getInstance();
++
++        String s = String.format("\nпример вывода\n %1$te-%1$tm-%1$tY", c);
++
++        System.out.println(s);
++    }
++}
+Index: src/main/java/exeption/mastering/FactorialException.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/exeption/mastering/FactorialException.java b/src/main/java/exeption/mastering/FactorialException.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/exeption/mastering/FactorialException.java	
+@@ -0,0 +1,16 @@
++package exeption.mastering;
++
++class FactorialException extends Exception {
++
++    private int number;
++
++    public int getNumber() {
++        return number;
++    }
++
++    public FactorialException(String message, int num) {
++
++        super(message);
++        number = num;
++    }
++}
+Index: src/main/java/exeption/mastering/Factorial.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/exeption/mastering/Factorial.java b/src/main/java/exeption/mastering/Factorial.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/exeption/mastering/Factorial.java	
+@@ -0,0 +1,16 @@
++package exeption.mastering;
++
++class Factorial{
++
++    public static int getFactorial(int num) throws FactorialException{
++
++        int result=1;
++        if(num<1) throw new FactorialException("Число меньше, чем 1", num);
++
++        for(int i=1; i<=num;i++){
++
++            result*=i;
++        }
++        return result;
++    }
++}
+Index: src/main/java/util/regex/matcher/MyTest3.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/util/regex/matcher/MyTest3.java b/src/main/java/util/regex/matcher/MyTest3.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/util/regex/matcher/MyTest3.java	
+@@ -0,0 +1,28 @@
++package util.regex.matcher;
++
++public class MyTest3 {
++    public static void main(String[] args) {
++
++        String text = "197229, город Санкт-Петербург, Лахтинский пр-кт, д. 2 к. 3 стр. 1";
++        String text2 = "197229, г. Санкт-Петербург, Лахтинский пр-кт, д. 2 к. 3 стр. 1";
++
++        System.out.println(getCity(text));
++        System.out.println(getCity(text2));
++    }
++
++    public static String getCity(String text){
++
++        String[] split = text.split(" ");
++        String result = "";
++
++        for (int i = 0; i < split.length; i++) {
++            if(split[i].equals("город")){
++                result = split[i+1];
++            } else if (split[i].equals("г.")) {
++                result = split[i+1];
++            }
++        }
++
++        return result;
++    }
++}
+Index: src/main/java/util/regex/matcher/MyTest2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/util/regex/matcher/MyTest2.java b/src/main/java/util/regex/matcher/MyTest2.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/util/regex/matcher/MyTest2.java	
+@@ -0,0 +1,22 @@
++package util.regex.matcher;
++
++import java.util.regex.Pattern;
++
++public class MyTest2 {
++    public static void main(String[] args) {
++
++        String text = "197229, город Санкт-Петербург, Лахтинский пр-кт, д. 2 к. 3 стр. 1";
++
++        String patternString = "город";
++        Pattern pattern = Pattern.compile(patternString);
++
++        String[] split = pattern.split(text);
++
++        System.out.println("split.length = " + split.length);
++
++
++        for(String element : split){
++            System.out.println("element = " + element);
++        }
++    }
++}
+Index: src/main/java/exeption/mastering/NewMes.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/exeption/mastering/NewMes.java b/src/main/java/exeption/mastering/NewMes.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/exeption/mastering/NewMes.java	
+@@ -0,0 +1,16 @@
++package exeption.mastering;
++
++public class NewMes {
++    public static void main(String[] args){
++
++        try{
++            int result = Factorial.getFactorial(3);
++            System.out.println(result);
++        }
++        catch(FactorialException ex){
++
++            System.out.println(ex.getMessage());
++            System.out.println(ex.getNumber());
++        }
++    }
++}

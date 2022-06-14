@@ -1,0 +1,146 @@
+Index: src/main/java/util/regex/PrintFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package util.regex;\r\n\r\npublic class PrintFragment {\r\n    public static void main(String[] args) {\r\n\r\n        String line = \"Лукин Иван Петрович\";\r\n        String[] word = line.split(\" \");\r\n        String newLine = \"\";\r\n        // вывод выводит имя и отчество\r\n        for (int i = 0; i < word.length; i++) {\r\n            if(i != 0){\r\n                newLine += word[i]+\" \";\r\n//                System.out.println(word[i]);\r\n            }\r\n        }\r\n\r\n        System.out.println(newLine);\r\n\r\n        for (String str : word) {\r\n//            System.out.println(str);\r\n        }\r\n\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/util/regex/PrintFragment.java b/src/main/java/util/regex/PrintFragment.java
+--- a/src/main/java/util/regex/PrintFragment.java	
++++ b/src/main/java/util/regex/PrintFragment.java	
+@@ -10,7 +10,7 @@
+         for (int i = 0; i < word.length; i++) {
+             if(i != 0){
+                 newLine += word[i]+" ";
+-//                System.out.println(word[i]);
++                System.out.println(word[i]);
+             }
+         }
+ 
+Index: src/main/java/util/regex/matcher/MatcherReplaceExample_2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package util.regex.matcher;\r\n\r\nimport java.util.regex.Pattern;\r\nimport java.util.regex.Matcher;\r\n\r\npublic class MatcherReplaceExample_2 {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        String text    =\r\n                \"John writes about this, and John Doe writes about that,\" +\r\n                        \" and John Wayne writes about everything.\"\r\n                ;\r\n\r\n        String patternString1 = \"((John)(.+?)) \";\r\n\r\n        Pattern      pattern      = Pattern.compile(patternString1);\r\n        Matcher      matcher      = pattern.matcher(text);\r\n        StringBuffer stringBuffer = new StringBuffer();\r\n\r\n        while(matcher.find()){\r\n            matcher.appendReplacement(stringBuffer, \"Joe Blocks \");\r\n//            System.out.println(stringBuffer.toString());\r\n        }\r\n        matcher.appendTail(stringBuffer);\r\n\r\n        System.out.println(stringBuffer.toString());\r\n    }\r\n}\r\n//Источник: https://java-blog.ru/osnovy/klass-java-matcher\r\n
+===================================================================
+diff --git a/src/main/java/util/regex/matcher/MatcherReplaceExample_2.java b/src/main/java/util/regex/matcher/MatcherReplaceExample_2.java
+--- a/src/main/java/util/regex/matcher/MatcherReplaceExample_2.java	
++++ b/src/main/java/util/regex/matcher/MatcherReplaceExample_2.java	
+@@ -20,7 +20,7 @@
+ 
+         while(matcher.find()){
+             matcher.appendReplacement(stringBuffer, "Joe Blocks ");
+-//            System.out.println(stringBuffer.toString());
++            System.out.println(stringBuffer.toString());
+         }
+         matcher.appendTail(stringBuffer);
+ 
+Index: src/main/java/Aquarium.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.ArrayList;\r\nimport java.util.Arrays;\r\n\r\n\r\nclass Aquarium {\r\n    private ArrayList<Fish> fish;\r\n\r\n    public static void main(String[] args) {\r\n        Aquarium aquarium = new Aquarium();\r\n        System.out.println(aquarium.getFish());\r\n        // fish has already been initialized\r\n        System.out.println(aquarium.getFish()); // line n1\r\n    }\r\n\r\n    public ArrayList<Fish> getFish() {\r\n        if (fish == null) initFish();\r\n        return fish;\r\n    }\r\n\r\n    private void initFish() {\r\n        fish = new ArrayList<>(Arrays.asList(\r\n                new Fish(\"Bubbles\"),\r\n                new Fish(\"Calypso\"),\r\n                new Fish(\"Dory\")\r\n        ));\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/Aquarium.java b/src/main/java/Aquarium.java
+--- a/src/main/java/Aquarium.java	
++++ b/src/main/java/Aquarium.java	
+@@ -5,15 +5,11 @@
+ class Aquarium {
+     private ArrayList<Fish> fish;
+ 
+-    public static void main(String[] args) {
+-        Aquarium aquarium = new Aquarium();
+-        System.out.println(aquarium.getFish());
+-        // fish has already been initialized
+-        System.out.println(aquarium.getFish()); // line n1
+-    }
+ 
+     public ArrayList<Fish> getFish() {
+-        if (fish == null) initFish();
++        if (fish == null) {
++            initFish();
++        }
+         return fish;
+     }
+ 
+Index: src/main/java/util/stream/user/Sample.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package util.stream.user;\r\n\r\nimport java.util.*;\r\nimport java.util.stream.Collectors;\r\n\r\npublic class Sample {\r\n    private final List<User> userList = Arrays.asList(\r\n            new User(1, \"Michael\", \"Robert\", 37, \"TR\"),\r\n            new User(2, \"Mary\", \"Patricia\", 11, \"EN\"),\r\n            new User(3, \"John\", \"Michael\", 7, \"FR\"),\r\n            new User(4, \"Jennifer\", \"Linda\", 77, \"TR\"),\r\n            new User(5, \"William\", \"Elizabeth\", 23, \"US\"),\r\n            new User(6, \"Sue\", \"Jackson\", 11, \"IT\"),\r\n            new User(7, \"Michael\", \"Tommy\", 37, \"EN\")\r\n    );\r\n\r\n    public static void main(String... args) {\r\n        Sample sample = new Sample();\r\n        sample.test1();\r\n\r\n\r\n    }\r\n    // Перебор всех элементов userList с помощью forEach() и вывод их в консоль\r\n    private void test1() {\r\n        System.out.println(\"Test 1\");\r\n        userList.stream()\r\n                .forEach(System.out::println);\r\n    }\r\n    // Перебор всех элементов с выполнением некоторой операции над каждым элементом списка и вывод их на консоль.\r\n    private void test2() {\r\n        System.out.println(\"Test 2\");\r\n        userList.stream()\r\n                .map(u -> {\r\n                    return new User(u.getId(),\r\n                            \"X \" + u.getFirstName(),\r\n                            \"Y \" + u.getLastName(),\r\n                            u.getAge() + 10,\r\n                            u.getNationality());\r\n                })\r\n                .collect(Collectors.toList())\r\n                .forEach(System.out::println);\r\n    }\r\n    // Сортировка списка по свойству age.\r\n    private void test3() {\r\n        System.out.println(\"Test 3\");\r\n        userList.stream()\r\n                .sorted(Comparator.comparing(User::getAge))\r\n                .collect(Collectors.toList())\r\n                .forEach(System.out::println);\r\n    }\r\n    // Сортировка списка по нескольким свойствам: age, firstName, lastName.\r\n    private void test4() {\r\n        System.out.println(\"Test 4\");\r\n        userList.stream()\r\n                .sorted(Comparator.comparing(User::getAge)\r\n                        .thenComparing(User::getFirstName)\r\n                        .thenComparing(User::getLastName))\r\n                .collect(Collectors.toList())\r\n                .forEach(System.out::println);\r\n    }\r\n    //  Вычисление среднего возраста (age) и максимальной длины firstName\r\n    private void test5() {\r\n        System.out.println(\"Test 5\");\r\n        double averageAge = userList.stream()\r\n                .mapToInt(User::getAge)\r\n                .summaryStatistics()\r\n                .getAverage();\r\n        System.out.print(\"averageAge: \" + averageAge);\r\n        int maxFirstNameLenght = userList.stream()\r\n                .mapToInt((value) -> {\r\n                    return value.getFirstName().length();\r\n                })\r\n                .summaryStatistics()\r\n                .getMax();\r\n        System.out.println(\" maxFirstNameLenght: \" + maxFirstNameLenght);\r\n    }\r\n    // Проверка, что у всех User возраст (age) больше 6.\r\n    private void test6() {\r\n        System.out.println(\"Test 6\");\r\n        boolean isAllAgesGreaterThan6 = userList.stream()\r\n                .allMatch(user -> user.getAge() > 6);\r\n        System.out.println(\"isAllAgesGreaterThan6: \" +     isAllAgesGreaterThan6);\r\n    }\r\n    // Проверка, есть ли кто-то с firstName, начинающийся с символа S.\r\n    private void test7() {\r\n        System.out.println(\"Test 7\");\r\n        boolean isFirstCharS = userList.stream()\r\n                .anyMatch(user -> user.getFirstName().charAt(0) == 'S');\r\n        System.out.println(\"isFirstCharS \" + isFirstCharS);\r\n    }\r\n    // Преобразование одной коллекцию в другую.\r\n    private void test8() {\r\n        System.out.println(\"Test 8\");\r\n        List<User> list = userList.stream()\r\n                .collect(Collectors.toList());\r\n        Set<User> set = userList.stream()\r\n                .collect(Collectors.toSet());\r\n        List<User> linkedList = userList.stream()\r\n                .collect(Collectors.toCollection(LinkedList::new));\r\n        Map<Long, User> map = userList.stream()\r\n                .collect(Collectors.toMap(user -> user.getId(), user -> user));\r\n    }\r\n    // Количество разных национальностей (nationality).\r\n    private void test9() {\r\n        long countDifferentNationalites = userList.stream()\r\n                .map(User::getNationality)\r\n                .distinct()\r\n                .count();\r\n        System.out.println(\"countDifferentNationalites: \" + countDifferentNationalites);\r\n    }\r\n    // User старше 10 лет, у которых первый символ firstName не равен M.\r\n    private void test10() {\r\n        System.out.println(\"Test 10\");\r\n        userList.stream()\r\n                .filter(p -> (p.getFirstName().charAt(0) != 'M'))\r\n                .filter(p -> (p.getAge() > 10))\r\n                .collect(Collectors.toList())\r\n                .forEach(System.out::println);\r\n    }\r\n}\r\n\r\n
+===================================================================
+diff --git a/src/main/java/util/stream/user/Sample.java b/src/main/java/util/stream/user/Sample.java
+--- a/src/main/java/util/stream/user/Sample.java	
++++ b/src/main/java/util/stream/user/Sample.java	
+@@ -30,13 +30,11 @@
+     private void test2() {
+         System.out.println("Test 2");
+         userList.stream()
+-                .map(u -> {
+-                    return new User(u.getId(),
+-                            "X " + u.getFirstName(),
+-                            "Y " + u.getLastName(),
+-                            u.getAge() + 10,
+-                            u.getNationality());
+-                })
++                .map(u -> new User(u.getId(),
++                        "X " + u.getFirstName(),
++                        "Y " + u.getLastName(),
++                        u.getAge() + 10,
++                        u.getNationality()))
+                 .collect(Collectors.toList())
+                 .forEach(System.out::println);
+     }
+@@ -67,9 +65,7 @@
+                 .getAverage();
+         System.out.print("averageAge: " + averageAge);
+         int maxFirstNameLenght = userList.stream()
+-                .mapToInt((value) -> {
+-                    return value.getFirstName().length();
+-                })
++                .mapToInt((value) -> value.getFirstName().length())
+                 .summaryStatistics()
+                 .getMax();
+         System.out.println(" maxFirstNameLenght: " + maxFirstNameLenght);
+Index: src/main/java/TutorialDebag.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class TutorialDebag {\r\n\r\n    public static void main(String[] args) {\r\n        Aquarium aquarium = new Aquarium();\r\n\r\n        System.out.println(aquarium.getFish());\r\n        // fish has already been initialized\r\n        System.out.println(aquarium.getFish()); // line n1\r\n    }\r\n\r\n\r\n\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/TutorialDebag.java b/src/main/java/TutorialDebag.java
+--- a/src/main/java/TutorialDebag.java	
++++ b/src/main/java/TutorialDebag.java	
+@@ -1,6 +1,7 @@
+ public class TutorialDebag {
+ 
+     public static void main(String[] args) {
++
+         Aquarium aquarium = new Aquarium();
+ 
+         System.out.println(aquarium.getFish());
+Index: src/main/java/util/dateAndTime/DataCalendarTime.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package util.dateAndTime;\r\n\r\nimport java.util.Calendar;\r\nimport java.util.Date;\r\n\r\n//https://metanit.com/java/tutorial/12.3.php\r\n\r\npublic class DataCalendarTime {\r\n    public static void main(String[] args) {\r\n\r\n/*\r\n        Calendar calendarStart = Calendar.getInstance();\r\n        calendarStart.set(Calendar.DATE, 1);\r\n        calendarStart.add(Calendar.MONTH, -1);\r\n        Date fromPeriod = calendarStart.getTime();\r\n\r\n        Calendar calendarEnd = Calendar.getInstance();\r\n        calendarEnd.add(Calendar.MONTH, -1);\r\n        calendarEnd.set(Calendar.DATE, calendarEnd.getActualMaximum(Calendar.DATE));\r\n        Date toPeriod = calendarEnd.getTime();\r\n\r\n        // Начало года\r\n        calendarStart.set(Calendar.MONTH, 0);\r\n        Date fromYear = calendarStart.getTime();\r\n\r\n        // Конец прошлого года\r\n        Calendar calendarPrev = Calendar.getInstance();\r\n        calendarPrev.add(Calendar.YEAR, -1);\r\n        calendarPrev.set(Calendar.DATE, 1);\r\n        calendarPrev.set(Calendar.MONTH, 11);\r\n        calendarPrev.set(Calendar.DATE, calendarPrev.getActualMaximum(Calendar.DATE));\r\n        Date to = calendarPrev.getTime();\r\n\r\n        // Начало прошлого года\r\n        Calendar calendarPrevStart = Calendar.getInstance();\r\n        calendarPrevStart.add(Calendar.YEAR, -1);\r\n        calendarPrevStart.set(Calendar.DATE, 1);\r\n        calendarPrevStart.set(Calendar.MONTH, 0);\r\n        Date from = calendarPrevStart.getTime();\r\n\r\n        // Текущая дата\r\n        Date now = new Date();\r\n\r\n        System.out.println(fromPeriod + \" начальная дата запроса\" + \" (fromPeriod)\");\r\n        System.out.println(toPeriod + \" конечная дата запроса\" + \" (toPeriod)\\n\");\r\n\r\n        System.out.println(fromYear + \" прошлый год перед запросом\" +\" (fromYear)\\n\");\r\n        System.out.println(to + \" конец периода прошлого года\" + \" (to)\");\r\n        System.out.println(from + \" начало периода прошлого года\" + \" (from)\\n\");\r\n        System.out.println(now + \" сегодня\" + \" (now)\");\r\n*/\r\n\r\n//        final ZonedDateTime input = ZonedDateTime.now();\r\n//        System.out.println(input);\r\n//\r\n//        final ZonedDateTime startOfLastWeek = input.minusWeeks(1).with(DayOfWeek.MONDAY);\r\n//        System.out.println(startOfLastWeek);\r\n//\r\n//        final ZonedDateTime endOfLastWeek = startOfLastWeek.plusDays(6);\r\n//        System.out.println(endOfLastWeek);\r\n\r\n\r\n        Date test = new Date();\r\n\r\n\r\n        // создаем дату запроса\r\n        Calendar calendar = Calendar.getInstance();\r\n        calendar.setTime(test);\r\n        calendar.add(Calendar.YEAR, -1);\r\n\r\n        // вычисляем понедельник прошлой недели от даты запроса\r\n        int i = calendar.get(Calendar.DAY_OF_WEEK) - calendar.getFirstDayOfWeek();\r\n        calendar.add(Calendar.DATE, -i - 7);\r\n        Date startLastWeek = calendar.getTime();\r\n\r\n        // вычисляем воскресенье прошлой недели от даты запроса\r\n        calendar.add(Calendar.DATE, 6);\r\n        Date endLastWeek = calendar.getTime();\r\n\r\n        // вычисляем понедельник выбранной недели\r\n        calendar.add(Calendar.DATE, 1);\r\n        Date startThisWeek = calendar.getTime();\r\n\r\n        // вычисляем воскресенье выбранной недели\r\n        calendar.add(Calendar.DATE, 6);\r\n        Date endThisWeek = calendar.getTime();\r\n\r\n        System.out.println(startLastWeek + \" Понедельник прошлой недели от даты запроса\");\r\n        System.out.println(endLastWeek + \" Воскресенье прошлой недели от даты запроса\");\r\n        System.out.println(startThisWeek + \" Понедельник от даты запроса\");\r\n        System.out.println(endThisWeek + \" Воскресенье от даты запроса\");\r\n\r\n    }\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/util/dateAndTime/DataCalendarTime.java b/src/main/java/util/dateAndTime/DataCalendarTime.java
+--- a/src/main/java/util/dateAndTime/DataCalendarTime.java	
++++ b/src/main/java/util/dateAndTime/DataCalendarTime.java	
+@@ -4,6 +4,7 @@
+ import java.util.Date;
+ 
+ //https://metanit.com/java/tutorial/12.3.php
++//https://stackoverflow.com/questions/17210839/get-last-week-date-range-for-a-date-in-java
+ 
+ public class DataCalendarTime {
+     public static void main(String[] args) {
+@@ -60,12 +61,12 @@
+ //        System.out.println(endOfLastWeek);
+ 
+ 
+-        Date test = new Date();
++        Date date = new Date();
+ 
+ 
+         // создаем дату запроса
+         Calendar calendar = Calendar.getInstance();
+-        calendar.setTime(test);
++        calendar.setTime(date);
+         calendar.add(Calendar.YEAR, -1);
+ 
+         // вычисляем понедельник прошлой недели от даты запроса
