@@ -29,19 +29,7 @@ public class Show {
         }
     }
 
-    static void mapping() {
 
-        List<Car> models = Arrays.asList(new Car("BMW", 2011), new Car("Audi", 2018), new Car("Peugeot", 2015));
-
-        boolean all = models.stream().allMatch(model -> model.getYear() > 2010);
-        System.out.println("Все модели новее 2010 г.: " + all);
-
-        boolean any = models.stream().anyMatch(model -> model.getYear() > 2016);
-        System.out.println("Есть ли модели новее 2016 года? : " + any);
-
-        boolean none = models.stream().noneMatch(model -> model.getYear() < 2010);
-        System.out.println("Есть машина старше 2010 года? : " + none);
-    }
 
     public static void main(String[] args) {
         List<String> models = Arrays.asList("BMW", "Audi", "Peugeot", "Fiat");
@@ -88,6 +76,21 @@ public class Show {
                 .filter(model -> !model.equals("Fiat"))
                 .map(Car::new)
                 .collect(Collectors.toList());
+        carList.forEach(System.out::println);
+    }
+
+    static void mapping() {
+
+        List<Car> models = Arrays.asList(new Car("BMW", 2011), new Car("Audi", 2018), new Car("Peugeot", 2015));
+
+        boolean all = models.stream().allMatch(model -> model.getYear() > 2010);
+        System.out.println("Все модели новее 2010 г.: " + all);
+
+        boolean any = models.stream().anyMatch(model -> model.getYear() > 2016);
+        System.out.println("Есть ли модели новее 2016 года? : " + any);
+
+        boolean none = models.stream().noneMatch(model -> model.getYear() < 2010);
+        System.out.println("Есть машина старше 2010 года? : " + none);
     }
 }
 
