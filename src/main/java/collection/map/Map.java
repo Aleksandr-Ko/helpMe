@@ -38,6 +38,7 @@ public class Map {
                 "найден" : "не найден";
         System.out.println("Объект со значением 'value2' "
                 + exists);
+
         // Перебор значений
         Set<java.util.Map.Entry<String, String>> set;
         set = map.entrySet();
