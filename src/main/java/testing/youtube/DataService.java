@@ -1,35 +1,39 @@
 package testing.youtube;
 
+import java.util.Comparator;
 import java.util.List;
 
 public class DataService {
 
-
     private DataService() {
+        throw new IllegalStateException("Utility class");
     }
 
     /**
      * Находит максимальное число из списка
      *
-     * @param number Список чисел
+     * @param numbers Список чисел
      * @return максимальное число
      */
-    public static int findMax(List<Integer> number) throws NullPointerException {
+    public static int findMax(List<Integer> numbers) throws NullPointerException {
 
-        if(number == null || number.isEmpty()){
+        if (numbers == null || numbers.isEmpty()) {
             throw new NullPointerException("null");
         }
 
-        int max = number.get(0);
+        int max = numbers.get(0);
 
-        for (int i = 0; i < number.size(); i++) {
+        for (Integer number : numbers) {
 
-            if (max < number.get(i)) {
-                max = number.get(i);
+            if (max < number) {
+                max = number;
             }
         }
 
         return max;
     }
 
+    public static int findMaxByStream(List<Integer> numbers) {
+        return numbers.stream().max(Comparator.naturalOrder()).orElseThrow(() -> new NullPointerException("List of numbers is empty"));
+    }
 }
