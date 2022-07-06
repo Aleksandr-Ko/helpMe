@@ -9,7 +9,7 @@ import java.io.FileOutputStream;
 
 // Создаем таблицу в файле документа Word
 
-public class CreateTable {
+public class CreateTable1 {
 
     public static void main(String[] args) throws Exception {
 
